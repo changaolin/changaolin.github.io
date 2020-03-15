@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>mock on 猫名上和</title>
+    <link>/tags/mock/</link>
+    <description>Recent content in mock on 猫名上和</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©2020 cal.</copyright>
+    <lastBuildDate>Fri, 14 Feb 2020 13:56:00 +0800</lastBuildDate>
+    
+        <atom:link href="/tags/mock/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>easy-mock</title>
+      <link>/post/mock/easy-mock/</link>
+      <pubDate>Fri, 14 Feb 2020 13:56:00 +0800</pubDate>
+      
+      <guid>/post/mock/easy-mock/</guid>
+      <description>安装 easy-mock-github nvm :node版本要求为v8.9.1 docker安装mongo docker pull mongo docker run -itd --name mongo -p 27017:27017 mongo docker安装redis docker pull redis docker run -itd --name redis -p 6379:6379 redis docker 安</description>
+      
+    </item>
+    
+  </channel>
+</rss>

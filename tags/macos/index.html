@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.62.2" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark"><title>MACOS&nbsp;&ndash;&nbsp;猫名上和</title><link rel="stylesheet" href="/css/core.min.9d1ada802af58058e3d4d48eaac609df00fa5d8cc968d407476b2cee09f2e3b6296e5819f39453552b75bc2d2afc1011.css" integrity="sha384-nRragCr1gFjj1NSOqsYJ3wD6XYzJaNQHR2ss7gny47YpblgZ85RTVSt1vC0q/BAR"><link rel="alternate" type="application/rss+xml" href="/tags/macos/index.xml" title="猫名上和" /><body>
+    <div class="base-body"><section id="header" class="site header">
+    <div class="header wrap"><span class="header left-side"><a class="site home" href="/"><span class="site name">猫名上和</span></a></span>
+        <span class="header right-side"></span></div></section><div id="content"><section class="article header"><h1>MACOS</h1></section><ul class="note list"><li class="item"><a class="note" href="/post/go/goinstall/">
+            <p class="note title">MAC安装GoLang</p><p class="note date">Sunday, March 15, 2020</p><p class="note content">参考连接 官网安装 官网地址 brew 安装 `brew install go` 安装地址为 `/usr/local/go` 环境配置 # GO export PATH=$HOME/go/bin:$PATH export GOROOT=/usr/local/go export GOPATH=$HOME/go 测试 mkdir -p $HOME/go/src/hello hello.go package main import &#34;fmt&#34; func main() { fmt.Printf(&#34;hello, world\n&#34;) } - `go build` 在该hello.go文件目录下<span class="mldr">&mldr;more</span></p></a><p class="note labels"><a class="tag" href="/tags/macos/">MACOS</a><a class="tag" href="/tags/go/">GO</a></p></li><li class="item"><a class="note" href="/post/emacs/cquery/">
+            <p class="note title">MAC配置lsp-cquery</p><p class="note date">Saturday, February 22, 2020</p><p class="note content">安装 brew install cquery EMACS-C CQuery ;; (setq cquery-executable &#34;/path/to/cquery/build/release/bin/cquery&#34;) (with-eval-after-load &#39;projectile (setq projectile-project-root-files-top-down-recurring (append &#39;(&#34;compile_commands.json&#34; &#34;.cquery&#34;) projectile-project-root-files-top-down-recurring))) (defun cquery//enable () (condition-case nil (lsp) (user-error nil))) (use-package cquery :commands lsp :init (add-hook &#39;c-mode-hook #&#39;cquery//enable) (add-hook &#39;c++-mode-hook #&#39;cquery//enable)) ;; Also see lsp-project-whitelist lsp-project-blacklist cquery-root-matchers (setq cquery-extra-init-params &#39;(:index (:comments 2) :cacheFormat &#34;msgpack&#34; :completion (:detailedLabel t))) (setq lsp-ui-doc-include-signature nil) ; don&#39;t include type signature in the child frame (setq lsp-ui-sideline-show-symbol nil) ;<span class="mldr">&mldr;more</span></p></a><p class="note labels"><a class="tag" href="/tags/cquery/">cquery</a><a class="tag" href="/tags/lsp-mode/">lsp-mode</a><a class="tag" href="/tags/emacs/">Emacs</a><a class="tag" href="/tags/macos/">MACOS</a></p></li></ul></div><section id="footer" class="footer"><div class="footer-wrap">
+    <p class="copyright">©2020 cal.</p>
+    <p class="powerby"><span>Powered by </span><a href="https://gohugo.io" 
+        target="_blank">Hugo</a><span> and the </span><a href="https://themes.gohugo.io/hugo-notepadium/" 
+        target="_blank">Notepadium</a></p>
+</div></section></div>
+</body>
+
+</html>

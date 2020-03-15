@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>5G on 猫名上和</title>
+    <link>/tags/5g/</link>
+    <description>Recent content in 5G on 猫名上和</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©2020 cal.</copyright>
+    <lastBuildDate>Sun, 15 Mar 2020 17:06:07 +0800</lastBuildDate>
+    
+        <atom:link href="/tags/5g/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>5G-1</title>
+      <link>/post/5g/5g_1/</link>
+      <pubDate>Sun, 15 Mar 2020 17:06:07 +0800</pubDate>
+      
+      <guid>/post/5g/5g_1/</guid>
+      <description>课程连接 5G愿景 愿景.png 三个基础指标 eMBB 峰值10GBps ：VR，AR，MR mMTC 1000,000连接/平方公里 : 物联网 uRLLC 1ms 延迟 : 车联网 3GPP r15 标准</description>
+      
+    </item>
+    
+  </channel>
+</rss>

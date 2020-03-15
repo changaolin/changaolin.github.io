@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>lsp-mode on 猫名上和</title>
+    <link>/tags/lsp-mode/</link>
+    <description>Recent content in lsp-mode on 猫名上和</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©2020 cal.</copyright>
+    <lastBuildDate>Sat, 22 Feb 2020 16:36:00 +0800</lastBuildDate>
+    
+        <atom:link href="/tags/lsp-mode/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>MAC配置lsp-cquery</title>
+      <link>/post/emacs/cquery/</link>
+      <pubDate>Sat, 22 Feb 2020 16:36:00 +0800</pubDate>
+      
+      <guid>/post/emacs/cquery/</guid>
+      <description>安装 brew install cquery EMACS-C CQuery ;; (setq cquery-executable &amp;#34;/path/to/cquery/build/release/bin/cquery&amp;#34;) (with-eval-after-load &amp;#39;projectile (setq projectile-project-root-files-top-down-recurring (append &amp;#39;(&amp;#34;compile_commands.json&amp;#34; &amp;#34;.cquery&amp;#34;) projectile-project-root-files-top-down-recurring))) (defun cquery//enable () (condition-case nil (lsp) (user-error nil))) (use-package cquery :commands lsp :init (add-hook &amp;#39;c-mode-hook #&amp;#39;cquery//enable) (add-hook &amp;#39;c++-mode-hook #&amp;#39;cquery//enable)) ;; Also see lsp-project-whitelist lsp-project-blacklist cquery-root-matchers (setq cquery-extra-init-params &amp;#39;(:index (:comments 2) :cacheFormat &amp;#34;msgpack&amp;#34; :completion (:detailedLabel t))) (setq lsp-ui-doc-include-signature nil) ; don&amp;#39;t include type signature in the child frame (setq lsp-ui-sideline-show-symbol nil) ;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

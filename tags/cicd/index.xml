@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>cicd on 猫名上和</title>
+    <link>/tags/cicd/</link>
+    <description>Recent content in cicd on 猫名上和</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©2020 cal.</copyright>
+    <lastBuildDate>Sun, 15 Mar 2020 17:06:04 +0800</lastBuildDate>
+    
+        <atom:link href="/tags/cicd/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>基于docker的gitlab迁移</title>
+      <link>/post/cicd/gitlab/</link>
+      <pubDate>Sun, 15 Mar 2020 17:06:04 +0800</pubDate>
+      
+      <guid>/post/cicd/gitlab/</guid>
+      <description>基于docker的gitlab服务，最低要求为2核4G，最好配上2G的swap。 前期使用的阿里云服务器即将到期，服务器需要整体迁移到华为云同</description>
+      
+    </item>
+    
+    <item>
+      <title>科学上网</title>
+      <link>/post/tools/v2ray/</link>
+      <pubDate>Tue, 25 Feb 2020 13:41:00 +0800</pubDate>
+      
+      <guid>/post/tools/v2ray/</guid>
+      <description>参考 下载服务端并且 更改服务器时间，与客户端时区一致 cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime wget https://install.direct/go.sh # 下载脚本 bash go.sh # 执行安装 sudo systemctl start v2ray # 启动 如果你按照上面的命令执行安装完成之后，服务</description>
+      
+    </item>
+    
+  </channel>
+</rss>

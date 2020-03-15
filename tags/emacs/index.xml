@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Emacs on 猫名上和</title>
+    <link>/tags/emacs/</link>
+    <description>Recent content in Emacs on 猫名上和</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©2020 cal.</copyright>
+    <lastBuildDate>Thu, 27 Feb 2020 09:41:00 +0800</lastBuildDate>
+    
+        <atom:link href="/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>org-agenda</title>
+      <link>/post/orgmode/org-agenda/</link>
+      <pubDate>Thu, 27 Feb 2020 09:41:00 +0800</pubDate>
+      
+      <guid>/post/orgmode/org-agenda/</guid>
+      <description>设置任务阶段 #+SEQ_TODO: TODO(T!) | DONE(D@) CANCELED(C@/!) ;; C-c C-c 启动 ;;C-c C-t 打开选项 ;;!: 自动增加时间戳 ;;@: 需要增加说明 ;;|: 分割完成和未完成的状态 快捷键 快捷键 说明｜ C-c . 创建时间戳 C-u C-c . 插入</description>
+      
+    </item>
+    
+    <item>
+      <title>Centos 安装 cquery</title>
+      <link>/post/emacs/cquery_centos/</link>
+      <pubDate>Sat, 22 Feb 2020 16:36:00 +0800</pubDate>
+      
+      <guid>/post/emacs/cquery_centos/</guid>
+      <description>安装cmake（可选） wget https://cmake.org/files/v3.12/cmake-3.12.0-rc1.tar.gz tar -zxvf cmake-3.12.0-rc1.tar.gz cd cmake-3.12.0-rc1 ./bootstrap gmake gmake install Building git clone --recursive https://github.com/cquery-project/cquery.git cd cquery git submodule update --init mkdir build &amp;amp;&amp;amp; cd build cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=release -DCMAKE_EXPORT_COMPILE_COMMANDS=YES cmake --build . cmake --build . --target install # Change the -DCMAKE_INSTALL_PREFIX=&amp;lt;dir to your choice&amp;gt; to install the binary to a place you want. 错误一</description>
+      
+    </item>
+    
+    <item>
+      <title>MAC配置lsp-cquery</title>
+      <link>/post/emacs/cquery/</link>
+      <pubDate>Sat, 22 Feb 2020 16:36:00 +0800</pubDate>
+      
+      <guid>/post/emacs/cquery/</guid>
+      <description>安装 brew install cquery EMACS-C CQuery ;; (setq cquery-executable &amp;#34;/path/to/cquery/build/release/bin/cquery&amp;#34;) (with-eval-after-load &amp;#39;projectile (setq projectile-project-root-files-top-down-recurring (append &amp;#39;(&amp;#34;compile_commands.json&amp;#34; &amp;#34;.cquery&amp;#34;) projectile-project-root-files-top-down-recurring))) (defun cquery//enable () (condition-case nil (lsp) (user-error nil))) (use-package cquery :commands lsp :init (add-hook &amp;#39;c-mode-hook #&amp;#39;cquery//enable) (add-hook &amp;#39;c++-mode-hook #&amp;#39;cquery//enable)) ;; Also see lsp-project-whitelist lsp-project-blacklist cquery-root-matchers (setq cquery-extra-init-params &amp;#39;(:index (:comments 2) :cacheFormat &amp;#34;msgpack&amp;#34; :completion (:detailedLabel t))) (setq lsp-ui-doc-include-signature nil) ; don&amp;#39;t include type signature in the child frame (setq lsp-ui-sideline-show-symbol nil) ;</description>
+      
+    </item>
+    
+    <item>
+      <title>Go-Emacs配置</title>
+      <link>/post/go/go_emacs/</link>
+      <pubDate>Wed, 19 Feb 2020 19:38:00 +0800</pubDate>
+      
+      <guid>/post/go/go_emacs/</guid>
+      <description>配置go module 开启module &amp;amp; 设置代理 export GO111MODULE=on export GOPROXY=https://goproxy.cn # 或者 goproxy.io 下载支持三方库 go get golang.org/x/tools/cmd/goimports go get golang.org/x/tools/cmd/godoc go get github.com/rogpeppe/godef go get golang.org/x/tools/cmd/guru go get golang.org/x/lint/golint go get github.com/nsf/gocode go get golang.org/x/tools/cmd/gorename 配置emacs (use-package go-mode :ensure t :mode ((&amp;#34;\\.go\\&amp;#39;&amp;#34; . go-mode)) :hook</description>
+      
+    </item>
+    
+  </channel>
+</rss>

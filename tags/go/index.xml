@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>GO on 猫名上和</title>
+    <link>/tags/go/</link>
+    <description>Recent content in GO on 猫名上和</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©2020 cal.</copyright>
+    <lastBuildDate>Sun, 15 Mar 2020 17:06:07 +0800</lastBuildDate>
+    
+        <atom:link href="/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>MAC安装GoLang</title>
+      <link>/post/go/goinstall/</link>
+      <pubDate>Sun, 15 Mar 2020 17:06:07 +0800</pubDate>
+      
+      <guid>/post/go/goinstall/</guid>
+      <description>参考连接 官网安装 官网地址 brew 安装 `brew install go` 安装地址为 `/usr/local/go` 环境配置 # GO export PATH=$HOME/go/bin:$PATH export GOROOT=/usr/local/go export GOPATH=$HOME/go 测试 mkdir -p $HOME/go/src/hello hello.go package main import &amp;#34;fmt&amp;#34; func main() { fmt.Printf(&amp;#34;hello, world\n&amp;#34;) } - `go build` 在该hello.go文件目录下</description>
+      
+    </item>
+    
+    <item>
+      <title>Go-Emacs配置</title>
+      <link>/post/go/go_emacs/</link>
+      <pubDate>Wed, 19 Feb 2020 19:38:00 +0800</pubDate>
+      
+      <guid>/post/go/go_emacs/</guid>
+      <description>配置go module 开启module &amp;amp; 设置代理 export GO111MODULE=on export GOPROXY=https://goproxy.cn # 或者 goproxy.io 下载支持三方库 go get golang.org/x/tools/cmd/goimports go get golang.org/x/tools/cmd/godoc go get github.com/rogpeppe/godef go get golang.org/x/tools/cmd/guru go get golang.org/x/lint/golint go get github.com/nsf/gocode go get golang.org/x/tools/cmd/gorename 配置emacs (use-package go-mode :ensure t :mode ((&amp;#34;\\.go\\&amp;#39;&amp;#34; . go-mode)) :hook</description>
+      
+    </item>
+    
+  </channel>
+</rss>

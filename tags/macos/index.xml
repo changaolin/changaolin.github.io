@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>MACOS on 猫名上和</title>
+    <link>/tags/macos/</link>
+    <description>Recent content in MACOS on 猫名上和</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©2020 cal.</copyright>
+    <lastBuildDate>Sun, 15 Mar 2020 17:06:07 +0800</lastBuildDate>
+    
+        <atom:link href="/tags/macos/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>MAC安装GoLang</title>
+      <link>/post/go/goinstall/</link>
+      <pubDate>Sun, 15 Mar 2020 17:06:07 +0800</pubDate>
+      
+      <guid>/post/go/goinstall/</guid>
+      <description>参考连接 官网安装 官网地址 brew 安装 `brew install go` 安装地址为 `/usr/local/go` 环境配置 # GO export PATH=$HOME/go/bin:$PATH export GOROOT=/usr/local/go export GOPATH=$HOME/go 测试 mkdir -p $HOME/go/src/hello hello.go package main import &amp;#34;fmt&amp;#34; func main() { fmt.Printf(&amp;#34;hello, world\n&amp;#34;) } - `go build` 在该hello.go文件目录下</description>
+      
+    </item>
+    
+    <item>
+      <title>MAC配置lsp-cquery</title>
+      <link>/post/emacs/cquery/</link>
+      <pubDate>Sat, 22 Feb 2020 16:36:00 +0800</pubDate>
+      
+      <guid>/post/emacs/cquery/</guid>
+      <description>安装 brew install cquery EMACS-C CQuery ;; (setq cquery-executable &amp;#34;/path/to/cquery/build/release/bin/cquery&amp;#34;) (with-eval-after-load &amp;#39;projectile (setq projectile-project-root-files-top-down-recurring (append &amp;#39;(&amp;#34;compile_commands.json&amp;#34; &amp;#34;.cquery&amp;#34;) projectile-project-root-files-top-down-recurring))) (defun cquery//enable () (condition-case nil (lsp) (user-error nil))) (use-package cquery :commands lsp :init (add-hook &amp;#39;c-mode-hook #&amp;#39;cquery//enable) (add-hook &amp;#39;c++-mode-hook #&amp;#39;cquery//enable)) ;; Also see lsp-project-whitelist lsp-project-blacklist cquery-root-matchers (setq cquery-extra-init-params &amp;#39;(:index (:comments 2) :cacheFormat &amp;#34;msgpack&amp;#34; :completion (:detailedLabel t))) (setq lsp-ui-doc-include-signature nil) ; don&amp;#39;t include type signature in the child frame (setq lsp-ui-sideline-show-symbol nil) ;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

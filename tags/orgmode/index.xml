@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>OrgMode on 猫名上和</title>
+    <link>/tags/orgmode/</link>
+    <description>Recent content in OrgMode on 猫名上和</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©2020 cal.</copyright>
+    <lastBuildDate>Thu, 27 Feb 2020 09:41:00 +0800</lastBuildDate>
+    
+        <atom:link href="/tags/orgmode/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>org-agenda</title>
+      <link>/post/orgmode/org-agenda/</link>
+      <pubDate>Thu, 27 Feb 2020 09:41:00 +0800</pubDate>
+      
+      <guid>/post/orgmode/org-agenda/</guid>
+      <description>设置任务阶段 #+SEQ_TODO: TODO(T!) | DONE(D@) CANCELED(C@/!) ;; C-c C-c 启动 ;;C-c C-t 打开选项 ;;!: 自动增加时间戳 ;;@: 需要增加说明 ;;|: 分割完成和未完成的状态 快捷键 快捷键 说明｜ C-c . 创建时间戳 C-u C-c . 插入</description>
+      
+    </item>
+    
+  </channel>
+</rss>

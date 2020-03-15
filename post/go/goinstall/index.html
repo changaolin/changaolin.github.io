@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.62.2" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark"><title>MAC安装GoLang&nbsp;&ndash;&nbsp;猫名上和</title><link rel="stylesheet" href="/css/core.min.9d1ada802af58058e3d4d48eaac609df00fa5d8cc968d407476b2cee09f2e3b6296e5819f39453552b75bc2d2afc1011.css" integrity="sha384-nRragCr1gFjj1NSOqsYJ3wD6XYzJaNQHR2ss7gny47YpblgZ85RTVSt1vC0q/BAR"><body>
+    <div class="base-body"><section id="header" class="site header">
+    <div class="header wrap"><span class="header left-side"><a class="site home" href="/"><span class="site name">猫名上和</span></a></span>
+        <span class="header right-side"></span></div></section><div id="content"><div class="article-container"><section class="article header">
+    <h1 class="article title">MAC安装GoLang</h1><p class="article date">Sunday, March 15, 2020</p></section><article class="article markdown-body"><h2 id="参考连接"><a href="https://www.jianshu.com/p/40e08c85f9e3"target="_blank">参考连接</a></h2>
+<h2 id="官网安装">官网安装</h2>
+<h3 id="官网地址"><a href="https://golang.org/dl/"target="_blank">官网地址</a></h3>
+<h2 id="brew-安装">brew 安装</h2>
+<h3 id="brew-install-go">`brew install go`</h3>
+<h2 id="安装地址为-usr-local-go">安装地址为 `/usr/local/go`</h2>
+<h2 id="环境配置">环境配置</h2>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># GO</span>
+<span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$HOME</span>/go/bin:<span class="nv">$PATH</span>
+<span class="nb">export</span> <span class="nv">GOROOT</span><span class="o">=</span>/usr/local/go
+<span class="nb">export</span> <span class="nv">GOPATH</span><span class="o">=</span><span class="nv">$HOME</span>/go
+</code></pre></div><h2 id="测试">测试</h2>
+<ul>
+<li>mkdir -p $HOME/go/src/hello</li>
+<li>hello.go</li>
+</ul>
+<!--listend-->
+<div class="highlight"><pre class="chroma"><code class="language-golang" data-lang="golang"><span class="kn">package</span> <span class="nx">main</span>
+
+<span class="kn">import</span> <span class="s">&#34;fmt&#34;</span>
+
+<span class="kd">func</span> <span class="nf">main</span><span class="p">(</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;hello, world\n&#34;</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="o">-</span> <span class="s">`</span><span class="s">go build</span><span class="s">`</span> <span class="nx">在该hello</span><span class="p">.</span><span class="nx">go文件目录下运行</span> <span class="k">go</span> <span class="nx">build</span><span class="p">,</span> <span class="nx">这个命令会创建一个命名为</span> <span class="nx">hello</span> <span class="nx">的可执行的文件</span>
+<span class="o">-</span> <span class="s">`</span><span class="s">go install hello</span><span class="s">`</span> <span class="nx">安装到工作空间</span> <span class="p">(</span><span class="err">$</span><span class="nx">HOME</span><span class="o">/</span><span class="k">go</span><span class="p">)</span> <span class="nx">的bin目录中</span><span class="o">-</span><span class="nx">全局调用</span>
+<span class="o">-</span> <span class="s">`</span><span class="s">go clean hello</span><span class="s">`</span> <span class="nx">撤销安装</span>
+</code></pre></div></article><section class="article labels"><a class="tag" href=/tags/macos/>MACOS</a><a class="tag" href=/tags/go/>GO</a></section></div><section class="article navigation"><p><a class="link" href="/post/5g/5g_1/"><span class="li">&larr;</span>5G-1</a></p><p><a class="link" href="/post/cicd/gitlab/"><span class="li">&rarr;</span>基于docker的gitlab迁移</a></p></section></div><section id="footer" class="footer"><div class="footer-wrap">
+    <p class="copyright">©2020 cal.</p>
+    <p class="powerby"><span>Powered by </span><a href="https://gohugo.io" 
+        target="_blank">Hugo</a><span> and the </span><a href="https://themes.gohugo.io/hugo-notepadium/" 
+        target="_blank">Notepadium</a></p>
+</div></section></div>
+</body>
+
+</html>

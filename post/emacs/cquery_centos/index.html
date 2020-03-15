@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.62.2" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark"><title>Centos 安装 cquery&nbsp;&ndash;&nbsp;猫名上和</title><link rel="stylesheet" href="/css/core.min.9d1ada802af58058e3d4d48eaac609df00fa5d8cc968d407476b2cee09f2e3b6296e5819f39453552b75bc2d2afc1011.css" integrity="sha384-nRragCr1gFjj1NSOqsYJ3wD6XYzJaNQHR2ss7gny47YpblgZ85RTVSt1vC0q/BAR"><body>
+    <div class="base-body"><section id="header" class="site header">
+    <div class="header wrap"><span class="header left-side"><a class="site home" href="/"><span class="site name">猫名上和</span></a></span>
+        <span class="header right-side"></span></div></section><div id="content"><div class="article-container"><section class="article header">
+    <h1 class="article title">Centos 安装 cquery</h1><p class="article date">Saturday, February 22, 2020<span class="lastmod"> • edited Sunday, March 15, 2020</span></p></section><article class="article markdown-body"><h2 id="安装cmake-可选">安装cmake（可选）</h2>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wget https://cmake.org/files/v3.12/cmake-3.12.0-rc1.tar.gz
+tar -zxvf cmake-3.12.0-rc1.tar.gz
+<span class="nb">cd</span> cmake-3.12.0-rc1
+./bootstrap
+gmake
+gmake install
+</code></pre></div><h2 id="building"><a href="https://github.com/cquery-project/cquery/wiki/Building-cquery"target="_blank">Building</a></h2>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">git clone --recursive https://github.com/cquery-project/cquery.git
+<span class="nb">cd</span> cquery
+git submodule update --init
+mkdir build <span class="o">&amp;&amp;</span> <span class="nb">cd</span> build
+cmake .. -DCMAKE_BUILD_TYPE<span class="o">=</span>Release -DCMAKE_INSTALL_PREFIX<span class="o">=</span>release -DCMAKE_EXPORT_COMPILE_COMMANDS<span class="o">=</span>YES
+cmake --build .
+cmake --build . --target install
+<span class="c1"># Change the -DCMAKE_INSTALL_PREFIX=&lt;dir to your choice&gt; to install the binary to a place you want.</span>
+</code></pre></div><h3 id="错误一">错误一</h3>
+<ul>
+<li>‘make_unique’不是‘std’的成员 <code>=[[https://blog.csdn.net/w670328683/article/details/79404417][升级GCC]]=</code></li>
+</ul>
+<p><a href="/ox-hugo/%e9%94%99%e8%af%af1.png">pngs/错误1.png</a></p>
+<ul>
+<li><a href="https://ftp.gnu.org/gnu/gcc/"target="_blank">GCC版本</a></li>
+</ul>
+<!--listend-->
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">cd</span> /root/ <span class="o">&amp;&amp;</span> wget https://ftp.gnu.org/gnu/gcc/gcc-7.3.0/gcc-7.3.0.tar.gz
+tar -zxvf gcc-7.3.0.tar.gz
+<span class="nb">cd</span> gcc-7.3.0
+./contrib/download_prerequisites  <span class="c1"># 下载依赖项</span>
+<span class="nb">cd</span> gcc-7.3.0
+./contrib/download_prerequisites
+../configure -enable-checking<span class="o">=</span>release -enable-languages<span class="o">=</span>c,c++ -disable-multilib
+make  <span class="c1"># make -j2  2表示2核</span>
+make install
+gcc -v
+find / -name <span class="s2">&#34;libstdc++.so*&#34;</span>  <span class="c1"># 查找库文件</span>
+cp /root/gcc-7.3.0/gcc-build-7.3.0/x86_64-pc-linux-gnu/libstdc++-v3/src/.libs/libstdc++.so.6.0.24 /usr/lib64  <span class="c1"># 移动最新文件</span>
+<span class="c1"># 删除旧的</span>
+<span class="nb">cd</span> /usr/lib64
+rm -rf libstdc++.so.6
+ln -s libstdc++.so.6.0.24 libstdc++.so.6
+</code></pre></div></article><section class="article labels"><a class="tag" href=/tags/centos/>Centos</a><a class="tag" href=/tags/cquery/>cquery</a><a class="tag" href=/tags/emacs/>Emacs</a></section></div><section class="article navigation"><p><a class="link" href="/post/tools/v2ray/"><span class="li">&larr;</span>科学上网</a></p><p><a class="link" href="/post/emacs/cquery/"><span class="li">&rarr;</span>MAC配置lsp-cquery</a></p></section></div><section id="footer" class="footer"><div class="footer-wrap">
+    <p class="copyright">©2020 cal.</p>
+    <p class="powerby"><span>Powered by </span><a href="https://gohugo.io" 
+        target="_blank">Hugo</a><span> and the </span><a href="https://themes.gohugo.io/hugo-notepadium/" 
+        target="_blank">Notepadium</a></p>
+</div></section></div>
+</body>
+
+</html>

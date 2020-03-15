@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.62.2" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark"><title>MAC配置lsp-cquery&nbsp;&ndash;&nbsp;猫名上和</title><link rel="stylesheet" href="/css/core.min.9d1ada802af58058e3d4d48eaac609df00fa5d8cc968d407476b2cee09f2e3b6296e5819f39453552b75bc2d2afc1011.css" integrity="sha384-nRragCr1gFjj1NSOqsYJ3wD6XYzJaNQHR2ss7gny47YpblgZ85RTVSt1vC0q/BAR"><body>
+    <div class="base-body"><section id="header" class="site header">
+    <div class="header wrap"><span class="header left-side"><a class="site home" href="/"><span class="site name">猫名上和</span></a></span>
+        <span class="header right-side"></span></div></section><div id="content"><div class="article-container"><section class="article header">
+    <h1 class="article title">MAC配置lsp-cquery</h1><p class="article date">Saturday, February 22, 2020<span class="lastmod"> • edited Sunday, March 15, 2020</span></p></section><article class="article markdown-body"><h2 id="安装">安装</h2>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">brew install cquery
+</code></pre></div><p><a href="http://martinsosic.com/development/emacs/2017/12/09/emacs-cpp-ide.html"target="_blank">EMACS-C</a>
+<a href="https://github.com/cquery-project/cquery/wiki/Emacs#configure"target="_blank">CQuery</a></p>
+<div class="highlight"><pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"> <span class="c1">;; (setq cquery-executable &#34;/path/to/cquery/build/release/bin/cquery&#34;)</span>
+<span class="p">(</span><span class="nb">with-eval-after-load</span> <span class="ss">&#39;projectile</span>
+  <span class="p">(</span><span class="nb">setq</span> <span class="nv">projectile-project-root-files-top-down-recurring</span>
+	<span class="p">(</span><span class="nf">append</span> <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;</span><span class="s">compile_commands.json</span><span class="s">&#34;</span>
+		  <span class="s">&#34;</span><span class="s">.cquery</span><span class="s">&#34;</span><span class="p">)</span>
+		<span class="nv">projectile-project-root-files-top-down-recurring</span><span class="p">)</span><span class="p">)</span><span class="p">)</span>
+
+<span class="p">(</span><span class="nb">defun</span> <span class="nv">cquery//enable</span> <span class="p">(</span><span class="p">)</span>
+  <span class="p">(</span><span class="nb">condition-case</span> <span class="no">nil</span>
+      <span class="p">(</span><span class="nv">lsp</span><span class="p">)</span>
+    <span class="p">(</span><span class="ne">user-error</span> <span class="no">nil</span><span class="p">)</span><span class="p">)</span><span class="p">)</span>
+
+  <span class="p">(</span><span class="nb">use-package</span> <span class="nv">cquery</span>
+    <span class="nb">:commands</span> <span class="nv">lsp</span>
+    <span class="nb">:init</span> <span class="p">(</span><span class="nv">add-hook</span> <span class="ss">&#39;c-mode-hook</span> <span class="nf">#&#39;</span><span class="nv">cquery//enable</span><span class="p">)</span>
+	  <span class="p">(</span><span class="nv">add-hook</span> <span class="ss">&#39;c++-mode-hook</span> <span class="nf">#&#39;</span><span class="nv">cquery//enable</span><span class="p">)</span><span class="p">)</span>
+<span class="c1">;; Also see lsp-project-whitelist lsp-project-blacklist cquery-root-matchers</span>
+<span class="p">(</span><span class="nb">setq</span> <span class="nv">cquery-extra-init-params</span> <span class="o">&#39;</span><span class="p">(</span><span class="nb">:index</span> <span class="p">(</span><span class="nb">:comments</span> <span class="mi">2</span><span class="p">)</span> <span class="nb">:cacheFormat</span> <span class="s">&#34;</span><span class="s">msgpack</span><span class="s">&#34;</span> <span class="nb">:completion</span> <span class="p">(</span><span class="nb">:detailedLabel</span> <span class="no">t</span><span class="p">)</span><span class="p">)</span><span class="p">)</span>
+<span class="p">(</span><span class="nb">setq</span> <span class="nv">lsp-ui-doc-include-signature</span> <span class="no">nil</span><span class="p">)</span>  <span class="c1">; don&#39;t include type signature in the child frame</span>
+<span class="p">(</span><span class="nb">setq</span> <span class="nv">lsp-ui-sideline-show-symbol</span> <span class="no">nil</span><span class="p">)</span>  <span class="c1">; don&#39;t show symbol on the right of info</span>
+<span class="p">(</span><span class="nb">setq</span> <span class="nv">company-transformers</span> <span class="no">nil</span> <span class="nv">company-lsp-async</span> <span class="no">t</span> <span class="nv">company-lsp-cache-candidates</span> <span class="no">nil</span><span class="p">)</span>
+<span class="p">(</span><span class="nb">setq</span> <span class="nv">cquery-extra-init-params</span> <span class="o">&#39;</span><span class="p">(</span><span class="nb">:completion</span> <span class="p">(</span><span class="nb">:detailedLabel</span> <span class="no">t</span><span class="p">)</span><span class="p">)</span><span class="p">)</span>
+<span class="p">(</span><span class="nb">setq</span> <span class="nv">cquery-sem-highlight-method</span> <span class="ss">&#39;font-lock</span><span class="p">)</span>
+</code></pre></div></article><section class="article labels"><a class="tag" href=/tags/cquery/>cquery</a><a class="tag" href=/tags/lsp-mode/>lsp-mode</a><a class="tag" href=/tags/emacs/>Emacs</a><a class="tag" href=/tags/macos/>MACOS</a></section></div><section class="article navigation"><p><a class="link" href="/post/emacs/cquery_centos/"><span class="li">&larr;</span>Centos 安装 cquery</a></p><p><a class="link" href="/post/ai/ai%E5%9F%BA%E7%A1%80/"><span class="li">&rarr;</span>人工智能</a></p></section></div><section id="footer" class="footer"><div class="footer-wrap">
+    <p class="copyright">©2020 cal.</p>
+    <p class="powerby"><span>Powered by </span><a href="https://gohugo.io" 
+        target="_blank">Hugo</a><span> and the </span><a href="https://themes.gohugo.io/hugo-notepadium/" 
+        target="_blank">Notepadium</a></p>
+</div></section></div>
+</body>
+
+</html>
