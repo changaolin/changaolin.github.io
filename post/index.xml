@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>©2020 cal.</copyright>
-    <lastBuildDate>Sun, 15 Mar 2020 17:06:07 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 16 Mar 2020 21:59:02 +0800</lastBuildDate>
     
         <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>5G-1</title>
       <link>/post/5g/5g_1/</link>
-      <pubDate>Sun, 15 Mar 2020 17:06:07 +0800</pubDate>
+      <pubDate>Mon, 16 Mar 2020 21:59:02 +0800</pubDate>
       
       <guid>/post/5g/5g_1/</guid>
       <description>课程连接 5G愿景 愿景.png 三个基础指标 eMBB 峰值10GBps ：VR，AR，MR mMTC 1000,000连接/平方公里 : 物联网 uRLLC 1ms 延迟 : 车联网 3GPP r15 标准</description>
@@ -25,7 +25,7 @@
     <item>
       <title>MAC安装GoLang</title>
       <link>/post/go/goinstall/</link>
-      <pubDate>Sun, 15 Mar 2020 17:06:07 +0800</pubDate>
+      <pubDate>Mon, 16 Mar 2020 21:59:02 +0800</pubDate>
       
       <guid>/post/go/goinstall/</guid>
       <description>参考连接 官网安装 官网地址 brew 安装 `brew install go` 安装地址为 `/usr/local/go` 环境配置 # GO export PATH=$HOME/go/bin:$PATH export GOROOT=/usr/local/go export GOPATH=$HOME/go 测试 mkdir -p $HOME/go/src/hello hello.go package main import &amp;#34;fmt&amp;#34; func main() { fmt.Printf(&amp;#34;hello, world\n&amp;#34;) } - `go build` 在该hello.go文件目录下</description>
@@ -35,10 +35,20 @@
     <item>
       <title>基于docker的gitlab迁移</title>
       <link>/post/cicd/gitlab/</link>
-      <pubDate>Sun, 15 Mar 2020 17:06:04 +0800</pubDate>
+      <pubDate>Mon, 16 Mar 2020 21:58:59 +0800</pubDate>
       
       <guid>/post/cicd/gitlab/</guid>
       <description>基于docker的gitlab服务，最低要求为2核4G，最好配上2G的swap。 前期使用的阿里云服务器即将到期，服务器需要整体迁移到华为云同</description>
+      
+    </item>
+    
+    <item>
+      <title>gantt</title>
+      <link>/post/plantuml/gantt/</link>
+      <pubDate>Mon, 16 Mar 2020 21:52:00 +0800</pubDate>
+      
+      <guid>/post/plantuml/gantt/</guid>
+      <description>@startuml Project starts 2020/03/16 saturday are closed sunday are closed 2020/04/06 is closed 2019/04/05 to 2019/04/19 is closed [TCP/IP] as [T] lasts 1 days [Some Thing] happens at [T]&#39;s end then [HTTPS] as [H] lasts 2 days [T] is colored in Red -- Page two -- [TCP解析] as [TC] lasts 1 days [H] -&amp;gt; [TC] @enduml</description>
       
     </item>
     

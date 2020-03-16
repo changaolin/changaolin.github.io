@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>©2020 cal.</copyright>
-    <lastBuildDate>Sun, 15 Mar 2020 17:06:04 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 16 Mar 2020 21:58:59 +0800</lastBuildDate>
     
         <atom:link href="/tags/gitlab/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>基于docker的gitlab迁移</title>
       <link>/post/cicd/gitlab/</link>
-      <pubDate>Sun, 15 Mar 2020 17:06:04 +0800</pubDate>
+      <pubDate>Mon, 16 Mar 2020 21:58:59 +0800</pubDate>
       
       <guid>/post/cicd/gitlab/</guid>
       <description>基于docker的gitlab服务，最低要求为2核4G，最好配上2G的swap。 前期使用的阿里云服务器即将到期，服务器需要整体迁移到华为云同</description>

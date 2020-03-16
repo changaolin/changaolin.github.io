@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>©2020 cal.</copyright>
-    <lastBuildDate>Sun, 15 Mar 2020 17:06:07 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 16 Mar 2020 21:59:02 +0800</lastBuildDate>
     
         <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>5G</title>
       <link>/tags/5g/</link>
-      <pubDate>Sun, 15 Mar 2020 17:06:07 +0800</pubDate>
+      <pubDate>Mon, 16 Mar 2020 21:59:02 +0800</pubDate>
       
       <guid>/tags/5g/</guid>
       <description></description>
@@ -25,7 +25,7 @@
     <item>
       <title>GO</title>
       <link>/tags/go/</link>
-      <pubDate>Sun, 15 Mar 2020 17:06:07 +0800</pubDate>
+      <pubDate>Mon, 16 Mar 2020 21:59:02 +0800</pubDate>
       
       <guid>/tags/go/</guid>
       <description></description>
@@ -35,7 +35,7 @@
     <item>
       <title>MACOS</title>
       <link>/tags/macos/</link>
-      <pubDate>Sun, 15 Mar 2020 17:06:07 +0800</pubDate>
+      <pubDate>Mon, 16 Mar 2020 21:59:02 +0800</pubDate>
       
       <guid>/tags/macos/</guid>
       <description></description>
@@ -45,7 +45,7 @@
     <item>
       <title>cicd</title>
       <link>/tags/cicd/</link>
-      <pubDate>Sun, 15 Mar 2020 17:06:04 +0800</pubDate>
+      <pubDate>Mon, 16 Mar 2020 21:58:59 +0800</pubDate>
       
       <guid>/tags/cicd/</guid>
       <description></description>
@@ -55,9 +55,29 @@
     <item>
       <title>gitlab</title>
       <link>/tags/gitlab/</link>
-      <pubDate>Sun, 15 Mar 2020 17:06:04 +0800</pubDate>
+      <pubDate>Mon, 16 Mar 2020 21:58:59 +0800</pubDate>
       
       <guid>/tags/gitlab/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>gantt</title>
+      <link>/tags/gantt/</link>
+      <pubDate>Mon, 16 Mar 2020 21:52:00 +0800</pubDate>
+      
+      <guid>/tags/gantt/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>PlantUML</title>
+      <link>/tags/plantuml/</link>
+      <pubDate>Mon, 16 Mar 2020 21:52:00 +0800</pubDate>
+      
+      <guid>/tags/plantuml/</guid>
       <description></description>
       
     </item>
